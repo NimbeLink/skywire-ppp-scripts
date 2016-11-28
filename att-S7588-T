@@ -30,7 +30,7 @@
 
 /dev/ttyACM0
 115200
-connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-S7588-chat"
+connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-S7588-T-chat"
 noauth
 defaultroute
 usepeerdns
