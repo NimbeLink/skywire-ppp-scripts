@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 NimbeLink, MIT License
+# Copyright (C) 2017 NimbeLink, MIT License
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 # and associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -17,42 +17,21 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 # Description
-# This file is the PPP file for the following modem:
-# 		Skywire LTE CAT1 VZW Modem: NL-SW-LTE-GELS3
+# This file is the PPP chat file for the following modem:
+# 		Skywire LTE CATM1 Verizon Modem: NL-SW-LTE-SVZM2x (SVZM20-ES, SVZM21)
 #
 # Instructions
-# 	1. 	You will need to add your APN in the file: vzw-GELS3-chat
-# 	2. 	This file is setup for PPP over UART. You Skywire may enumerate differently in /dev/.
-#		Change the line:
-#			/dev/ttyUSB0
-#		to however the Skywire enumerates for you.
-#
-# 	3.	PPP only works over UART. If you would like to use the USB data connection,
-#		Please visit the NimbeLink website for the CAT1 VZW Skywire for more information.
+# 	1. 	You will need to add your APN in this file.
+# 		Replace: 
+# 			[apn]
+# 		with your APN.
 #
 
-/dev/ttyUSB0
-115200
-
-# pppd options
-debug
-hide-password
-noauth
-defaultroute
-noipdefault
-usepeerdns
-local
-updetach
-ipcp-max-configure 20
-ipcp-max-failure 20
-
-# pppd options
-lcp-echo-interval 5
-lcp-echo-failure 10
-
-# Logfile configuration log will be stored into ppp-logfile
-logfile /etc/ppp/ppp-logfile
-record /etc/ppp/ppp-dumplog
-
-# provider specific chat script for connection establishment
-connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-GELS3-chat"
+TIMEOUT 3
+ECHO ON
+'' AT
+OK AT+CGDCONT=3,"IPV4V6","[apn]"
+OK AT+CFUN=1
+OK AT+CGATT=1
+OK AT+CGDATA="ppp",3,1
+CONNECT ''
