@@ -1,10 +1,14 @@
 PPP Files
 ===
-Copyright (c) NimbeLink 2016
+Copyright &copy; NimbeLink 2017
 
 Description
 ===
-This repo contains PPP files needed for the various Skywire modems.
+This repo contains example PPP files for various Skywire modems on Linux. These files provide direction on setting up a PPP connection, but they may need to be adapted to the specific embedded design developed by the customer. Each end customer embedded design is different.
+
+We recommend reviewing out the PPPD manual page for more information and options:
+
+	man pppd
 
 Usage
 ===
@@ -20,11 +24,11 @@ file to set the APN.
 
 Run your respective command:
 
-    sudo pppd call [name of script file]
+    sudo pppd call [script file]
 
 or
 
-    sudo pon [name of script file]
+    sudo pon [script file]
 
 Example
 ===
