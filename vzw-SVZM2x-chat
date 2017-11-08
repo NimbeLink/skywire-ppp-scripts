@@ -18,7 +18,7 @@
 #
 # Description
 # This file is the PPP chat file for the following modem:
-# 		Skywire LTE CATM1 Verizon Modem: NL-SW-LTE-SVZM2x (SVZM20-ES, SVZM21)
+# 		Skywire LTE CATM1 Verizon Modem: NL-SW-LTE-SVZM2x (SVZM20-ES, SVZM20)
 #
 # Instructions
 # 	1. 	You will need to add your APN in this file.

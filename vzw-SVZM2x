@@ -18,7 +18,7 @@
 #
 # Description
 # This file is the PPP file for the following modem:
-# 		Skywire LTE CATM1 Verizon Modem: NL-SW-LTE-SVZM2x (SVZM20-ES, SVZM21)
+# 		Skywire LTE CATM1 Verizon Modem: NL-SW-LTE-SVZM2x (SVZM20-ES, SVZM20)
 #
 # Instructions
 # 	1. 	You will need to add your APN in the file: vzw-SVZM2x-chat
@@ -27,11 +27,15 @@
 #			/dev/ttyUSB0
 #		to however the Skywire enumerates for you.
 #
+# Note: We recommend flow control at this high of baud rate, which is why we added the
+#   crtscts
+# option
 
 /dev/ttyUSB0
 921600
 connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-SVZM2x-chat"
 noauth
+crtscts
 defaultroute
 usepeerdns
 local
