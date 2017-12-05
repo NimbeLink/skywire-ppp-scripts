@@ -30,6 +30,6 @@
 TIMEOUT 35
 ECHO ON
 '' \rAT
-OK AT+CGDCONT=1,"IP","[apn]"
+OK AT%PDNSET=1,"[apn]","IP"
 OK ATDT0
 CONNECT ''
