@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 NimbeLink, MIT License
+# Copyright (C) 2017 NimbeLink, MIT License
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 # and associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -21,16 +21,17 @@
 # 		Skywire LTE CAT4 GSM Modem: NL-SW-LTE-S7588-T
 #
 # Instructions
-# 	1. 	You will need to add your APN in this file.
-# 		Replace: 
-# 			[apn]
-# 		with your APN.
+# 	1. The APN will need to be manually entered in the Skywire's AT interface
+# 	   before running this script. The APN automatically activates on the S7588-T-x
+#
+# 	   Please see document: 
+# 	       30222 "Configuring Linux 'pppd' for Skywire(R) LTE CAT4 Modem
+# 	   for more information.
 #
 
 TIMEOUT 35
 ECHO ON
 '' \rATZ
 OK 'ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0'
-OK AT+CGDCONT=1,"IP","[apn]","0.0.0.0",0,0
 OK ATD*99***1#
 CONNECT ''
