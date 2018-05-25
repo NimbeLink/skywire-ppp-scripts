@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 NimbeLink, MIT License
+# Copyright (C) 2018 NimbeLink, MIT License
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 # and associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -18,7 +18,8 @@
 #
 # Description
 # This file is the PPP file for the following modem:
-# 		Skywire LTE CAT4 Verizon Modem: NL-SW-LTE-S7588-V
+# 		Skywire LTE CAT1 Verizon Modem: NL-SW-LTE-S7618RD
+# 		Skywire LTE CAT4 Verizon Modem: NL-SW-LTE-S7588-V-x
 #
 # Instructions
 # 	1. 	You will need to add your APN in the file: vzw-S7588-chat
