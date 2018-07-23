@@ -39,3 +39,4 @@ usepeerdns
 local
 debug
 updetach
++ipv6
