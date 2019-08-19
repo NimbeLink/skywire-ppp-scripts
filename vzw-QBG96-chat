@@ -1,5 +1,5 @@
 #
-# Copyright 2018 NimbeLink, MIT License
+# Copyright 2019 NimbeLink, MIT License
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy 
 # of this software and associated documentation files (the "Software"), to 
@@ -36,6 +36,6 @@ ECHO ON
 '' AT
 OK AT+CGDCONT=3,"IPV4V6","[apn]"
 OK AT+CFUN=1
-OK AT+CGATT=1
+OK AT+QCSQ;+CEREG?;+COPS?;+CGDCONT?
 OK ATD*99#
 CONNECT 150000000 ''

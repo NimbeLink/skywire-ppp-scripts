@@ -29,7 +29,7 @@
 #               to however the Skywire enumerates for you.
 #
 
-/dev/ttyUSB0
+/dev/ttyUSB2
 115200
 connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-QBG96-chat"
 noauth
