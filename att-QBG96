@@ -19,10 +19,10 @@
 # Description
 # This file is the PPP file for the following modem:
 #               Skywire LTE CATM1 Global Modem: NL-SW-LTE-QBG96
-#               This file is specifically for using the NL-SW-LTE-QBG96 on Verizon
+#               This file is specifically for using the NL-SW-LTE-QBG96 on AT&T
 #
 # Instructions
-#       1.      You will need to add your APN in the file: vzw-QBG96-chat
+#       1.      You will need to add your APN in the file: att-QBG96-chat
 #       2.      This file is setup for PPP over UART. If you use USB, it may enumerate differently in /dev/.
 #               Change the line:
 #                       /dev/ttyUSB0
@@ -31,7 +31,7 @@
 
 /dev/ttyUSB0
 115200
-connect "/usr/sbin/chat -v -f /etc/ppp/peers/vzw-QBG96-chat"
+connect "/usr/sbin/chat -v -f /etc/ppp/peers/att-QBG96-chat"
 noauth
 crtscts
 defaultroute

@@ -21,8 +21,8 @@
 #
 # Description
 # This file is the PPP file for the following modem:
-#               Skywire LTE CATM1 Global Modem: NL-SW-LTE-QBG96
-#               This file is specifically for using the NL-SW-LTE-QBG96 on Verizon
+#               Skywire LTE CATM1 Global Modem: NL-SW-LTE-QBG95
+#               This file is specifically for using the NL-SW-LTE-QBG95 on Verizon
 #
 # Instructions
 #       1.      You will need to add your APN in this file.
