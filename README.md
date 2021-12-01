@@ -12,11 +12,11 @@ We recommend reviewing the PPPD manual page for more information and options:
 
 Usage
 ===
-Copy the script file and its associated chat file (or all of the files) into: 
+Copy the script file and its associated chat file (or all of the files) into:
 
     /etc/ppp/peers/
-     
-If you have a Skywire modem that uses a SIM card, follow instructions in your 
+
+If you have a Skywire modem that uses a SIM card, follow instructions in your
 
     *-chat
 
@@ -37,7 +37,7 @@ To use the NL-SW-LTE-TSVG Skywire that was activated at go.nimbelink.com, copy t
     vzw-TSVG
     vzw-TSVG-chat
 
-to "/etc/ppp/peers/". 
+to "/etc/ppp/peers/".
 
 Edit the file:
 

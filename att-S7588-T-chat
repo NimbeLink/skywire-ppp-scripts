@@ -25,7 +25,7 @@
 # 	1. The APN will need to be manually entered in the Skywire's AT interface
 # 	   before running this script. The APN automatically activates on the S7588-T-x
 #
-# 	   Please see document: 
+# 	   Please see document:
 # 	       30222 "Configuring Linux 'pppd' for Skywire(R) LTE NL-SW-LTE-S7xxx Modem Family
 # 	   for more information.
 #
