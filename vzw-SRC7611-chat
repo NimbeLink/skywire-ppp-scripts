@@ -1,0 +1,36 @@
+#
+# Copyright (C) 2021 NimbeLink, MIT License
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+# and associated documentation files (the "Software"), to deal in the Software without restriction,
+# including without limitation the rights to use, copy, modify, merge, publish, distribute,
+# sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or
+# substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+# BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+# DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# Description
+# This file is the PPP chat file for the following modem:
+# 		Skywire LTE CAT4 Verizon Modem: NL-SW-LTE-SRC7611-4
+#
+# Instructions
+# 	1. 	You will need to add your APN in this file.
+# 		Replace: 
+# 			[apn]
+# 		with your APN.
+#
+
+TIMEOUT 35
+ECHO ON
+'' \rATZ
+OK 'ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0'
+OK AT+CGDCONT=3,"IP","[apn]","0.0.0.0",0,0
+OK ATD*99***3#
+CONNECT ''
