@@ -27,7 +27,7 @@
 # 		with your APN.
 # 	2.  Replace:
 # 			[cid]
-# 		with the desired context ID of the APN. In most cases this should be 3
+# 		with the desired context ID of the APN. In most cases this should be 1
 #
 
 TIMEOUT 35
